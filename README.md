@@ -1,6 +1,6 @@
 # PkgUtils
 
-Some small utilities to help Julia package authors. Thanks to @sbromberger and @ianshmean, among others.
+Some small utilities to help Julia package authors. Thanks to @sbromberger and @ianshmean and @harryscholes and others for providing code, inspiration, etc. 
 
 ## Dependencies and Dependents
 
