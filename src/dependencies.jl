@@ -113,7 +113,7 @@ See all n-th order dependents of a package.
 function get_dependents(s, n = 1)
     s_index = pkgrev[s]
     new_g = egonet(rev_g, s_index, n)
-    dependents = [props(new_g, dependent)[:name] for dependent in vertices(new_g)[2:end]]
+    dependents = [props(new_g, dependent)[:name] for dependent in unique(vertices(new_g)[2:end])]
 end
 
 """
