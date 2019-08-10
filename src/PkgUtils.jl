@@ -2,6 +2,7 @@ module PkgUtils
 
 # deps 
 using Pkg, Statistics, LightGraphs, MetaGraphs
+using SnoopCompile
 
 # file includes 
 include("dependencies.jl")
