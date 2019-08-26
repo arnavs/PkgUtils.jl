@@ -1,6 +1,7 @@
 using PkgUtils
-using Test
+using Pkg, Test
 
-@testset "PkgUtils.jl" begin
-    # Write your own tests here.
+@elapsed begin
+    @time @testset "Dependencies" begin include("dependencies.jl") end
 end
+  
