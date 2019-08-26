@@ -6,9 +6,9 @@ using SnoopCompile
 
 # file includes 
 include("dependencies.jl")
-include("treeshaker.jl")
+# include("treeshaker.jl")
 
 # exports 
-export get_dependents, get_dependencies, trim_dependencies
+export get_dependents, get_dependencies
 
 end # module
