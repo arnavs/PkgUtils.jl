@@ -1,5 +1,7 @@
 # PkgUtils
 
+[![Build Status](https://travis-ci.org/arnavs/PkgUtils.jl.svg?branch=master)](https://travis-ci.org/arnavs/PkgUtils.jl)
+
 Some small utilities to help Julia package authors. Thanks to @sbromberger and @ianshmean and @harryscholes and others for providing code, inspiration, etc. 
 
 ## Dependencies and Dependents
