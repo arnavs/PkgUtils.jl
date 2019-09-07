@@ -2,7 +2,13 @@
 
 [![Build Status](https://travis-ci.org/arnavs/PkgUtils.jl.svg?branch=master)](https://travis-ci.org/arnavs/PkgUtils.jl)
 
-Some small utilities to help Julia package authors. Thanks to @sbromberger and @ianshmean and @harryscholes and others for providing code, inspiration, etc. 
+Some small utilities to help Julia package users and authors. Thanks to @sbromberger and @ianshmean and @harryscholes and others for providing code, inspiration, etc. 
+
+## Snapshot 
+
+* `snapshot!()` will save a copy of your current project and manifest file in the relevant `environments/` folder.
+
+* `undo!()` will revert the current project and manifest to the most recent snapshot.  
 
 ## Dependencies and Dependents
 
