@@ -4,11 +4,10 @@
 
 Some small utilities to help Julia package users and authors. Thanks to @sbromberger and @ianshmean and @harryscholes and others for providing code, inspiration, etc. 
 
-## Snapshot 
+## Environments
 
-* `snapshot!()` will save a copy of your current project and manifest file in the relevant `environments/` folder.
-
-* `undo!()` will revert the current project and manifest to the most recent snapshot.  
+* `manifest!"..."` creates and activates a throwaway environment based on the contents of a `Manifest.toml`.
+* `project!"..."` creates and activates a throwaway environment based on the contents of a `Project.toml`.
 
 ## Dependencies and Dependents
 
@@ -16,7 +15,8 @@ Some small utilities to help Julia package users and authors. Thanks to @sbrombe
 
 * `get_dependencies("SomePackage", n = 1)` returns n-th order dependencies of `SomePackage`.
 
-## Environments
+## Snapshot 
 
-* `manifest!"..."` creates and activates a throwaway environment based on the contents of a `Manifest.toml`.
-* `project!"..."` creates and activates a throwaway environment based on the contents of a `Project.toml`.
+* `snapshot!()` will save a copy of your current project and manifest file in the relevant `environments/` folder.
+
+* `undo!()` will revert the current project and manifest to the most recent snapshot.  
