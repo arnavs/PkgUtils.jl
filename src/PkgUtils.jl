@@ -1,15 +1,18 @@
 module PkgUtils
 
-# deps 
-using Pkg, Statistics, LightGraphs, MetaGraphs
+# deps
+using Pkg, Pkg.TOML, Statistics, LightGraphs, MetaGraphs
 using SnoopCompile
 
-# file includes 
+# file includes
 include("dependencies.jl")
 # include("treeshaker.jl")
 include("snapshot.jl")
+include("environments.jl")
 
-# exports 
+# exports
 export get_dependents, get_dependencies
 export snapshot!, undo!
-end # module
+export @project!_str, @manifest!_str
+
+end

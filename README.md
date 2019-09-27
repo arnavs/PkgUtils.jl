@@ -16,3 +16,7 @@ Some small utilities to help Julia package users and authors. Thanks to @sbrombe
 
 * `get_dependencies("SomePackage", n = 1)` returns n-th order dependencies of `SomePackage`.
 
+## Environments
+
+* `manifest!"..."` creates and activates a throwaway environment based on the contents of a `Manifest.toml`.
+* `project!"..."` creates and activates a throwaway environment based on the contents of a `Project.toml`.
