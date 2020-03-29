@@ -1,7 +1,7 @@
 name = "PkgUtils"
 uuid = "6f897bc9-7a02-494e-b4ae-05ae7ec60539"
 authors = ["Arnav Sood"]
-version = "0.4.0"
+version = "0.5.0"
 
 [deps]
 LightGraphs = "093fc24a-ae57-5d10-9952-331d41423f4d"
