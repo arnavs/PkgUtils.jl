@@ -5,7 +5,7 @@ version_in_range(v, s) = v in Pkg.Types.VersionSpec(s)
 get_pkg_dir(s) = "$REGDIR/$(uppercase(s[1]))/$s"
 
 
-# "Internal" utils and build the graph. 
+# "Internal" utils and build the graph.
 
 """
 Get all the dependencies of a package by
@@ -101,14 +101,17 @@ function build_graph(r=REGDIR; omit_packages=[])
     set_indexing_prop!(g, :name)
     return (g, reverse(g), pkglist, pkgrev)
 end
-g, rev_g, pkglist, pkgrev = build_graph()
+
+function __init__()
+    g, rev_g, pkglist, pkgrev = build_graph()
+end
 
 #===
-"Customer-facing" functions. 
+"Customer-facing" functions.
 ===#
 
 """
-See all n-th order dependents of a package. 
+See all n-th order dependents of a package.
 """
 function get_dependents(s, n = 1)
     s_index = pkgrev[s]
@@ -124,4 +127,3 @@ function get_dependencies(s, n = 1)
     new_g = egonet(g, s_index, n)
     dependents = [props(new_g, dependent)[:name] for dependent in unique(vertices(new_g)[2:end])]
 end
-
