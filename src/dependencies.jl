@@ -103,7 +103,7 @@ function build_graph(r=REGDIR; omit_packages=[])
 end
 
 function __init__()
-    g, rev_g, pkglist, pkgrev = build_graph()
+    global g, rev_g, pkglist, pkgrev = build_graph()
 end
 
 #===
