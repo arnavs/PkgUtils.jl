@@ -11,7 +11,7 @@ include("snapshot.jl")
 include("environments.jl")
 
 # exports
-export get_dependents, get_dependencies
+export get_dependents, get_dependencies, get_latest_version
 export snapshot!, undo!
 export @project!_str, @manifest!_str
 
