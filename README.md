@@ -17,6 +17,8 @@ Thanks to https://github.com/christopher-DG and https://github.com/oxinabox for 
 
 * `get_dependencies("SomePackage", n = 1)` returns n-th order dependencies of `SomePackage`.
 
+* `get_latest_version("SomePackage")` will get the latest version of that package. 
+
 Thanks to https://github.com/sbromberger for most of this code. 
 
 ## Snapshot 
